@@ -8,6 +8,11 @@ const app = Vue.createApp({
     };
   },
   methods: {
+
+    submitAlert() {
+      alert('form submitted')
+    },
+
     increment() {
       this.counter++;
     },

@@ -32,9 +32,13 @@
       <input 
       type="text" 
       v-on:input="Sname($event , 'zuhair')" 
-      v-on:keyup.enter="confirmed"
-      >
+      v-on:keyup.enter="confirmed">
       <p>Your name is: {{ confirmname }}</p>
+
+      <form v-on:submit.prevent="submitAlert">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>
